@@ -1,6 +1,6 @@
 ---
 title: "PS2"
-subtitle: "Semi-Empirical Models"
+subtitle: "Calibrating Physics-Based Projections of Sea-Level Rise"
 author: CEVE 543 Fall 2025
 due_date: "2025-10-22"
 assigned_date: "2025-10-06"
