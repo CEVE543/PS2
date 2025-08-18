@@ -1,9 +1,13 @@
 ---
-title: "PS2"
-subtitle: "Multi-site Streamflow Simulation for Colorado River Basin"
+title: "PS2: Multi-site Streamflow Simulation (Due Nov 17)"
+subtitle: "Colorado River Basin Drought Risk Analysis"
 author: CEVE 543 Fall 2025
-due_date: "2025-11-14"
-assigned_date: "2025-10-06"
+due_date: "2025-11-17"
+date: "2025-10-10"
+type: "assignment"
+module: 2
+points: "10%"
+description: "Integrated modeling combining physical processes, Bayesian calibration, and climate downscaling"
 
 engine: julia
 
@@ -13,7 +17,7 @@ format:
     toc-depth: 2
     code-block-bg: "#f8f8f8"
     code-block-border-left: "#e1e4e5"
-    theme: default
+    theme: cosmo
     number-sections: true
     fig-format: svg
   typst:
