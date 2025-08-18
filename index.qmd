@@ -1,8 +1,8 @@
 ---
 title: "PS2"
-subtitle: "Calibrating Physics-Based Projections of Sea-Level Rise"
+subtitle: "Multi-site Streamflow Simulation for Colorado River Basin"
 author: CEVE 543 Fall 2025
-due_date: "2025-10-22"
+due_date: "2025-11-14"
 assigned_date: "2025-10-06"
 
 engine: julia
@@ -33,3 +33,12 @@ code-overflow: wrap
 code-line-numbers: false
 code-block-font-size: "0.85em"
 ---
+
+## Tasks
+
+1. Implement hydrological model by coding difference equations with daily time step; test with provided parameter values
+2. Calibrate model using Bayesian methods with MCMC; validate against observations using multiple metrics including frequency spectra and seasonal patterns
+3. Force model with raw GCM data to demonstrate bias problems and unrealistic streamflow projections
+4. Implement bias correction using quantile mapping for temperature and precipitation; run corrected projections and assess improvements
+5. Develop HMM weather generator with 2-state structure trained on historical data; perturb parameters based on GCM delta changes and generate synthetic future weather
+6. Propagate parameter uncertainty by running 100-member ensemble with different MCMC posterior samples; compare uncertainty sources and create final synthesis visualizations
