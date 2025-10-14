@@ -1,13 +1,13 @@
 ---
-title: "PS2: Multi-site Streamflow Simulation (Due Nov 17)"
-subtitle: "Colorado River Basin Drought Risk Analysis"
+title: "PS2: Climate Downscaling Methods Practice Problems (Due Nov 19)"
+subtitle: "Module 2 Exam Preparation"
 author: CEVE 543 Fall 2025
-due_date: "2025-11-17"
-date: "2025-10-10"
+due_date: "2025-11-19"
+date: "2025-10-15"
 type: "assignment"
 module: 2
 points: "10%"
-description: "Integrated modeling combining physical processes, Bayesian calibration, and climate downscaling"
+description: "Practice problems covering bias correction, weather typing, HMM, weather generators, and global sensitivity analysis"
 
 engine: julia
 
@@ -22,13 +22,13 @@ format:
     fig-format: svg
   typst:
     fontsize: 11pt
-    margin: 
+    margin:
       x: 1in
       y: 1in
     number-sections: true
     fig-format: svg
 
-execute: 
+execute:
   cache: true
   freeze: auto
 
@@ -38,11 +38,97 @@ code-line-numbers: false
 code-block-font-size: "0.85em"
 ---
 
-## Tasks
+::: {.callout-important}
+## Draft Assignment
 
-1. Implement hydrological model by coding difference equations with daily time step; test with provided parameter values
-2. Calibrate model using Bayesian methods with MCMC; validate against observations using multiple metrics including frequency spectra and seasonal patterns
-3. Force model with raw GCM data to demonstrate bias problems and unrealistic streamflow projections
-4. Implement bias correction using quantile mapping for temperature and precipitation; run corrected projections and assess improvements
-5. Develop HMM weather generator with 2-state structure trained on historical data; perturb parameters based on GCM delta changes and generate synthetic future weather
-6. Propagate parameter uncertainty by running 100-member ensemble with different MCMC posterior samples; compare uncertainty sources and create final synthesis visualizations
+This is an **OUTLINE ONLY**.
+The final assignment with specific problems, datasets, and detailed instructions will be provided later in the semester.
+This outline is provided to give you a sense of the scope and structure of the assignment.
+:::
+
+## Overview
+
+This problem set provides practice with the five climate downscaling and analysis methods covered in Module 2.
+Problems mix conceptual understanding, computational implementation, and results interpretation to prepare you for the Module 2 exam.
+
+The assignment is graded for **completion and effort**, not correctness.
+This allows you to learn from mistakes and use this as genuine test preparation.
+
+## Problem Structure (Tentative)
+
+The final assignment will contain approximately 10-12 problems organized as follows:
+
+### Part 1: Bias Correction (2-3 problems)
+
+Problems will cover:
+
+- Applying quantile mapping to temperature or precipitation data
+- Comparing delta method versus quantile mapping approaches
+- Interpreting bias correction results and identifying potential issues
+- Understanding when different bias correction methods are appropriate
+
+### Part 2: Weather Typing (2-3 problems)
+
+Problems will cover:
+
+- Assigning weather states given sea level pressure patterns
+- Interpreting clustering results and weather regime characteristics
+- Connecting weather types to precipitation or temperature extremes
+- Discussing appropriate use cases and limitations
+
+### Part 3: Hidden Markov Models (2-3 problems)
+
+Problems will cover:
+
+- Interpreting HMM state assignments for precipitation data
+- Comparing stationary versus non-homogeneous HMM results
+- Understanding parameter interpretation and physical meaning
+- Evaluating model fit and performance
+
+### Part 4: Weather Generators (2-3 problems)
+
+Problems will cover:
+
+- Validating synthetic weather sequences against observations
+- Diagnosing problems in generated precipitation or temperature series
+- Comparing different weather generator types and approaches
+- Understanding preservation of statistical properties
+
+### Part 5: Global Sensitivity Analysis (1-2 problems)
+
+Problems will cover:
+
+- Interpreting Sobol indices and variance decomposition
+- Designing sensitivity analysis experiments for climate problems
+- Understanding interactions between uncertain inputs
+
+### Part 6: Synthesis and Comparison (1-2 problems)
+
+Problems will cover:
+
+- Selecting appropriate downscaling method(s) for given scenarios
+- Comparing strengths and limitations across methods
+- Justifying methodological choices for specific applications
+
+## Deliverables
+
+The final assignment will be submitted as a Jupyter notebook with:
+
+- Code implementations where requested
+- Written explanations and interpretations
+- Figures and visualizations as appropriate
+- Clear documentation of your reasoning
+
+## Grading
+
+This assignment is worth **10% of your course grade** and will be graded for **completion and effort**:
+
+- Full credit for completing all required problems with clear evidence of engagement
+- Partial credit for incomplete submissions proportional to work completed
+- Focus is on learning and test preparation, not on getting "correct" answers
+
+## Timeline
+
+- **Assigned**: October 15 (Module 2 begins)
+- **Due**: November 19 at start of class
+- **Solutions**: Will be discussed during review session on November 19
